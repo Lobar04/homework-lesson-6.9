@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Pupils
+{% endblock %}
+
+{% block content %}
+    <h1>Pupils</h1><br>
+    <table class="center-table">
+      <tr>
+        <th>Name</th>
+        <th>1.1</th>
+        <th>1.2</th>
+        <th>1.3</th>
+        <th>2.1</th>
+        <th>2.2</th>
+        <th>2.3</th>
+        <th>3.1</th>
+        <th>3.2</th>
+        <th>total</th>
+
+      </tr>
+        {% for pupil in pupils %}
+        <tr>
+        <td>{{ pupil.0}}</td>
+        <td>{{ pupil.1}}</td>
+        <td>{{ pupil.2}}</td>
+        <td>{{ pupil.3}}</td>
+        <td>{{ pupil.4}}</td>
+        <td>{{ pupil.5}}</td>
+        <td>{{ pupil.6}}</td>
+        <td>{{ pupil.7}}</td>
+        <td>{{ pupil.8}}</td>
+        <td>{{ pupil.9}}</td>
+      </tr>
+        {% endfor %}
+        </table>
+{% endblock %}

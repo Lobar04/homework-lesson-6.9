@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Themes
+{% endblock %}
+
+{% block content %}
+    <h1>Themes</h1>
+    <ul>
+        {% for theme in themes %}
+        <li>{{ theme}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Pupil table
+{% endblock %}
+
+{% block content %}
+    <h1>Pupil table</h1><br>
+    <table class="center-table">
+      <tr>
+        <th>Name</th>
+        <th>1.1</th>
+        <th>1.2</th>
+        <th>1.3</th>
+        <th>2.1</th>
+        <th>2.2</th>
+        <th>2.3</th>
+        <th>3.1</th>
+        <th>3.2</th>
+        <th>total</th>
+
+      </tr>
+      <tr>
+        <td>{{ pupil_info.0}}</td>
+        <td>{{ pupil_info.1}}</td>
+        <td>{{ pupil_info.2}}</td>
+        <td>{{ pupil_info.3}}</td>
+        <td>{{ pupil_info.4}}</td>
+        <td>{{ pupil_info.5}}</td>
+        <td>{{ pupil_info.6}}</td>
+        <td>{{ pupil_info.7}}</td>
+        <td>{{ pupil_info.8}}</td>
+        <td>{{ pupil_info.9}}</td>
+      </tr>
+    </table>
+{% endblock %}
